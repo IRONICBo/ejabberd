@@ -1,3 +1,4 @@
+
 %%%----------------------------------------------------------------------
 %%% ejabberd, Copyright (C) 2002-2023   ProcessOne
 %%%
@@ -173,6 +174,7 @@ load_from_config(OldHosts, NewHosts) ->
 -spec create_tabs() -> ok.
 create_tabs() ->
     _ = mnesia:delete_table(shaper),
+    % ets中的数据[{fast,100000},{normal,{3000,20000}}]
     _ = ets:new(shaper, [named_table, {read_concurrency, true}]),
     _ = ets:new(shaper_rules, [named_table, {read_concurrency, true}]),
     ok.

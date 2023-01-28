@@ -65,15 +65,22 @@ cache_nodes(_LServer) ->
 
 -spec set_session(#session{}) -> ok | {error, ejabberd_redis:error_reason()}.
 set_session(Session) ->
-    T = term_to_binary(Session),
+	% todo: 使用redis后端存取session
+    	% 这里存取的是hash类型
+    T = term_to_binary(Session), % 这个主要用于占位
     USKey = us_to_key(Session#session.us),
     SIDKey = sid_to_key(Session#session.sid),
+	% ?INFO_MSG("SIDKey ~p", [Session#session.sid]),
+    % SIDKey = Session#session.sid,
     ServKey = server_to_key(element(2, Session#session.us)),
     USSIDKey = us_sid_to_key(Session#session.us, Session#session.sid),
     NodeHostKey = node_host_to_key(node(), element(2, Session#session.us)),
     case ejabberd_redis:multi(
 	   fun() ->
-		   ejabberd_redis:hset(USKey, SIDKey, T),
+		   ejabberd_redis:hset(USKey, SIDKey, T), % 该用户的key
+	    %    ejabberd_redis:hset(USKey, term_to_binary(<<"status">>), "1"), % 设置用户状态   
+	    %    ejabberd_redis:hset(USKey, "status", "1"), % 设置用户状态   
+
 		   ejabberd_redis:hset(ServKey, USSIDKey, T),
 		   ejabberd_redis:hset(NodeHostKey,
 				       <<USKey/binary, "||", SIDKey/binary>>,
@@ -89,6 +96,8 @@ set_session(Session) ->
 
 -spec delete_session(#session{}) -> ok | {error, ejabberd_redis:error_reason()}.
 delete_session(#session{sid = SID} = Session) ->
+	% 删除掉session的记录
+    	% 就是直接删除掉相关的hash
     USKey = us_to_key(Session#session.us),
     SIDKey = sid_to_key(SID),
     ServKey = server_to_key(element(2, Session#session.us)),
@@ -97,6 +106,9 @@ delete_session(#session{sid = SID} = Session) ->
     case ejabberd_redis:multi(
 	   fun() ->
 		   ejabberd_redis:hdel(USKey, [SIDKey]),
+		%    ejabberd_redis:hdel(USKey, [term_to_binary(<<"status">>)]), % 设删除用户状态
+		%    ejabberd_redis:hdel(USKey, ["status"]), % 设删除用户状态
+		   
 		   ejabberd_redis:hdel(ServKey, [USSIDKey]),
 		   ejabberd_redis:hdel(NodeHostKey,
 				       [<<USKey/binary, "||", SIDKey/binary>>]),

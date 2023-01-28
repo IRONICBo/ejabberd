@@ -66,7 +66,12 @@
 %%%===================================================================
 start(SockMod, Socket, Opts) ->
     xmpp_stream_in:start(?MODULE, [{SockMod, Socket}, Opts],
-			 ejabberd_config:fsm_limit_opts(Opts)).
+			ejabberd_config:fsm_limit_opts(Opts)).
+
+			%  Tmp = ejabberd_config:fsm_limit_opts(Opts)),
+			%  ?INFO_MSG("[Asklv] [ejabberd_c2s:start] : ~p", [Tmp]),
+			% % 注意把值返回
+			%  Tmp.
 
 start_link(SockMod, Socket, Opts) ->
     xmpp_stream_in:start_link(?MODULE, [{SockMod, Socket}, Opts],
@@ -74,6 +79,10 @@ start_link(SockMod, Socket, Opts) ->
 
 accept(Ref) ->
     xmpp_stream_in:accept(Ref).
+%     Res = xmpp_stream_in:accept(Ref),
+% 	?INFO_MSG("accept res ~p", [Res]),
+% 	Res.
+
 
 %%%===================================================================
 %%% Common API
@@ -219,6 +228,8 @@ open_session(#{user := U, server := S, resource := R,
 %%% Hooks
 %%%===================================================================
 process_info(#{lserver := LServer} = State, {route, Packet}) ->
+	% ?INFO_MSG("adsasdasdasd", []),
+	% 事件在这里进行处理
     {Pass, State1} = case Packet of
 			 #presence{} ->
 			     process_presence_in(State, Packet);
@@ -228,6 +239,7 @@ process_info(#{lserver := LServer} = State, {route, Packet}) ->
 			     process_iq_in(State, Packet)
 		     end,
     if Pass ->
+	% ?INFO_MSG("LServer ~p, Packet ~p, State1 ~p", [LServer, Packet, State1]),
 	    {Packet1, State2} = ejabberd_hooks:run_fold(
 				  user_receive_packet, LServer,
 				  {Packet, State1}, []),

@@ -41,22 +41,23 @@
 start(normal, _Args) ->
     try
 	{T1, _} = statistics(wall_clock),
-	ejabberd_logger:start(),
+	ejabberd_logger:start(), % 这里才启动了日志
 	write_pid_file(),
 	start_included_apps(),
 	start_elixir_application(),
 	setup_if_elixir_conf_used(),
-	case ejabberd_config:load() of
+	case ejabberd_config:load() of % 开始加载配置文件，并且存入map
 	    ok ->
 		ejabberd_mnesia:start(),
-		file_queue_init(),
-		maybe_add_nameservers(),
-		case ejabberd_sup:start_link() of
+		file_queue_init(), % 队列 
+		maybe_add_nameservers(), % windows上面的处理
+		case ejabberd_sup:start_link() of % 启动一个监控进程
 		    {ok, SupPid} ->
 			ejabberd_system_monitor:start(),
 			register_elixir_config_hooks(),
 			ejabberd_cluster:wait_for_sync(infinity),
-			ejabberd_hooks:run(ejabberd_started, []),
+			% todo: hook机制
+			ejabberd_hooks:run(ejabberd_started, []), % 启动hook机制，不过这里的原理比较复杂
 			ejabberd:check_apps(),
 			ejabberd_systemd:ready(),
 			{T2, _} = statistics(wall_clock),
@@ -81,6 +82,7 @@ start(_, _) ->
     {error, badarg}.
 
 start_included_apps() ->
+    % get_key(application, key)
     {ok, Apps} = application:get_key(ejabberd, included_applications),
     lists:foreach(
 	fun(mnesia) ->
@@ -162,6 +164,7 @@ file_queue_init() ->
     QueueDir = case ejabberd_option:queue_dir() of
 		   undefined ->
 		       MnesiaDir = mnesia:system_info(directory),
+		       % "/home/lvbo/Projects/ejabberd-develop/ejabberd/_build/dev/rel/ejabberd/database"
 		       filename:join(MnesiaDir, "queue");
 		   Path ->
 		       Path

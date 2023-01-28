@@ -79,7 +79,7 @@
 start_link() ->
     case supervisor:start_link({local, ejabberd_gen_mod_sup}, ?MODULE, []) of
 	{ok, Pid} ->
-	    start_modules(),
+	    start_modules(), % 启动各个模块
 	    {ok, Pid};
 	Err ->
 	    Err

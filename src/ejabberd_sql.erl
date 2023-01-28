@@ -709,6 +709,7 @@ sql_query_internal(F) when is_function(F) ->
         Res -> Res
     end;
 sql_query_internal(Query) ->
+    % 执行sql
     State = get(?STATE_KEY),
     ?DEBUG("SQL: \"~ts\"", [Query]),
     QueryTimeout = query_timeout(State#state.host),
@@ -731,6 +732,7 @@ sql_query_internal(Query) ->
 		  Host = State#state.host,
 		  sqlite_to_odbc(Host, sqlite3:sql_exec(sqlite_db(Host), Query))
 	  end,
+      ?INFO_MSG("[Asklv] [ejabberd_sql:sql_query_internal] : ~p", [Res]),
     check_error(Res, Query).
 
 select_sql_query(Queries, State) ->

@@ -168,6 +168,7 @@ register_route(Domain, ServerHost, LocalHint, Pid) ->
 	    erlang:error({invalid_domain, ServerHost});
 	{LDomain, LServerHost} ->
 	    Mod = get_backend(),
+	    ?INFO_MSG("[Asklv] [ejabberd_router:register_route->get_backend] : ~p", [Mod]),
 	    case Mod:register_route(LDomain, LServerHost, LocalHint,
 				    get_component_number(LDomain), Pid) of
 		ok ->

@@ -214,6 +214,7 @@ flush_cache(Mod, User, Server) ->
 
 -spec store_offline_msg(#offline_msg{}) -> ok | {error, full | any()}.
 store_offline_msg(#offline_msg{us = {User, Server}, packet = Pkt} = Msg) ->
+	% 存储离线消息
     UseMam = use_mam_for_user(User, Server),
     Mod = gen_mod:db_mod(Server, ?MODULE),
     case UseMam andalso xmpp:get_meta(Pkt, mam_archived, false) of

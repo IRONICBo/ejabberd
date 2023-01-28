@@ -93,10 +93,12 @@ get_sessions(LUser, LServer) ->
 %%%===================================================================
 init([]) ->
     update_tables(),
+    % session表
     ejabberd_mnesia:create(?MODULE, session,
 			[{ram_copies, [node()]},
 			 {attributes, record_info(fields, session)},
 			 {index, [usr,us]}]),
+    % session记录表
     ejabberd_mnesia:create(?MODULE, session_counter,
 			[{ram_copies, [node()]},
 			 {attributes, record_info(fields, session_counter)}]),

@@ -1,0 +1,880 @@
+make copy-files-sub
+make[1]: 进入目录“/home/lvbo/Projects/ejabberd-develop/ejabberd”
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/base64url-1.0.1/ebin
+/usr/bin/install -c -m 644 deps/base64url/ebin/base64url.beam /home/lvbo/ejabberd-install/lib/base64url-1.0.1/ebin/base64url.beam
+/usr/bin/install -c -m 644 deps/base64url/ebin/base64url.app /home/lvbo/ejabberd-install/lib/base64url-1.0.1/ebin/base64url.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/base64url-1.0.1
+/usr/bin/install -c -m 644 deps/base64url/LICENSE.txt /home/lvbo/ejabberd-install/lib/base64url-1.0.1/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/ebin
+/usr/bin/install -c -m 644 deps/cache_tab/ebin/cache_tab_app.beam /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/ebin/cache_tab_app.beam
+/usr/bin/install -c -m 644 deps/cache_tab/ebin/ets_cache.beam /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/ebin/ets_cache.beam
+/usr/bin/install -c -m 644 deps/cache_tab/ebin/cache_tab.beam /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/ebin/cache_tab.beam
+/usr/bin/install -c -m 644 deps/cache_tab/ebin/ets_cache_options.beam /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/ebin/ets_cache_options.beam
+/usr/bin/install -c -m 644 deps/cache_tab/ebin/cache_tab_sup.beam /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/ebin/cache_tab_sup.beam
+/usr/bin/install -c -m 644 deps/cache_tab/ebin/cache_tab.app /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/ebin/cache_tab.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/priv/lib
+rm -f /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/priv/lib/ets_cache.so; /usr/bin/install -c -m 644 deps/cache_tab/priv/lib/ets_cache.so /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/priv/lib/ets_cache.so
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/include
+/usr/bin/install -c -m 644 deps/cache_tab/include/ets_cache.hrl /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/include/ets_cache.hrl
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30
+/usr/bin/install -c -m 644 deps/cache_tab/LICENSE.txt /home/lvbo/ejabberd-install/lib/cache_tab-1.0.30/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/eimp-1.0.22/ebin
+/usr/bin/install -c -m 644 deps/eimp/ebin/eimp_sup.beam /home/lvbo/ejabberd-install/lib/eimp-1.0.22/ebin/eimp_sup.beam
+/usr/bin/install -c -m 644 deps/eimp/ebin/eimp_worker.beam /home/lvbo/ejabberd-install/lib/eimp-1.0.22/ebin/eimp_worker.beam
+/usr/bin/install -c -m 644 deps/eimp/ebin/eimp_limit.beam /home/lvbo/ejabberd-install/lib/eimp-1.0.22/ebin/eimp_limit.beam
+/usr/bin/install -c -m 644 deps/eimp/ebin/eimp_app.beam /home/lvbo/ejabberd-install/lib/eimp-1.0.22/ebin/eimp_app.beam
+/usr/bin/install -c -m 644 deps/eimp/ebin/eimp.beam /home/lvbo/ejabberd-install/lib/eimp-1.0.22/ebin/eimp.beam
+/usr/bin/install -c -m 644 deps/eimp/ebin/eimp.app /home/lvbo/ejabberd-install/lib/eimp-1.0.22/ebin/eimp.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/eimp-1.0.22/priv/bin
+rm -f /home/lvbo/ejabberd-install/lib/eimp-1.0.22/priv/bin/eimp; /usr/bin/install -c -m 755 -o lvbo deps/eimp/priv/bin/eimp /home/lvbo/ejabberd-install/lib/eimp-1.0.22/priv/bin/eimp
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/eimp-1.0.22
+/usr/bin/install -c -m 644 deps/eimp/LICENSE.txt /home/lvbo/ejabberd-install/lib/eimp-1.0.22/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ezlib-1.0.12/ebin
+/usr/bin/install -c -m 644 deps/ezlib/ebin/ezlib_app.beam /home/lvbo/ejabberd-install/lib/ezlib-1.0.12/ebin/ezlib_app.beam
+/usr/bin/install -c -m 644 deps/ezlib/ebin/ezlib.beam /home/lvbo/ejabberd-install/lib/ezlib-1.0.12/ebin/ezlib.beam
+/usr/bin/install -c -m 644 deps/ezlib/ebin/ezlib_sup.beam /home/lvbo/ejabberd-install/lib/ezlib-1.0.12/ebin/ezlib_sup.beam
+/usr/bin/install -c -m 644 deps/ezlib/ebin/ezlib.app /home/lvbo/ejabberd-install/lib/ezlib-1.0.12/ebin/ezlib.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ezlib-1.0.12/priv/lib
+rm -f /home/lvbo/ejabberd-install/lib/ezlib-1.0.12/priv/lib/ezlib.so; /usr/bin/install -c -m 644 deps/ezlib/priv/lib/ezlib.so /home/lvbo/ejabberd-install/lib/ezlib-1.0.12/priv/lib/ezlib.so
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ezlib-1.0.12
+/usr/bin/install -c -m 644 deps/ezlib/LICENSE.txt /home/lvbo/ejabberd-install/lib/ezlib-1.0.12/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/ebin
+/usr/bin/install -c -m 644 deps/fast_tls/ebin/p1_sha.beam /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/ebin/p1_sha.beam
+/usr/bin/install -c -m 644 deps/fast_tls/ebin/fast_tls.beam /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/ebin/fast_tls.beam
+/usr/bin/install -c -m 644 deps/fast_tls/ebin/fast_tls.app /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/ebin/fast_tls.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/priv/lib
+rm -f /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/priv/lib/fast_tls.so; /usr/bin/install -c -m 644 deps/fast_tls/priv/lib/fast_tls.so /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/priv/lib/fast_tls.so
+rm -f /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/priv/lib/p1_sha.so; /usr/bin/install -c -m 644 deps/fast_tls/priv/lib/p1_sha.so /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/priv/lib/p1_sha.so
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16
+/usr/bin/install -c -m 644 deps/fast_tls/LICENSE.txt /home/lvbo/ejabberd-install/lib/fast_tls-1.1.16/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fxml_sup.beam /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fxml_sup.beam
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fxml_gen_pt.beam /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fxml_gen_pt.beam
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fxmlrpc_codec.beam /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fxmlrpc_codec.beam
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fxmlrpc.beam /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fxmlrpc.beam
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fast_xml.beam /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fast_xml.beam
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fxml_stream.beam /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fxml_stream.beam
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fxml.beam /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fxml.beam
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fxmlrpc_codec_external.beam /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fxmlrpc_codec_external.beam
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fxml_gen.beam /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fxml_gen.beam
+/usr/bin/install -c -m 644 deps/fast_xml/ebin/fast_xml.app /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/ebin/fast_xml.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/priv/lib
+rm -f /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/priv/lib/fxml_stream.so; /usr/bin/install -c -m 644 deps/fast_xml/priv/lib/fxml_stream.so /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/priv/lib/fxml_stream.so
+rm -f /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/priv/lib/fxml.so; /usr/bin/install -c -m 644 deps/fast_xml/priv/lib/fxml.so /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/priv/lib/fxml.so
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/include
+/usr/bin/install -c -m 644 deps/fast_xml/include/fxml_gen.hrl /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/include/fxml_gen.hrl
+/usr/bin/install -c -m 644 deps/fast_xml/include/fxml.hrl /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/include/fxml.hrl
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49
+/usr/bin/install -c -m 644 deps/fast_xml/LICENSE.txt /home/lvbo/ejabberd-install/lib/fast_xml-1.1.49/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34/ebin
+/usr/bin/install -c -m 644 deps/fast_yaml/ebin/fast_yaml_sup.beam /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34/ebin/fast_yaml_sup.beam
+/usr/bin/install -c -m 644 deps/fast_yaml/ebin/fast_yaml_app.beam /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34/ebin/fast_yaml_app.beam
+/usr/bin/install -c -m 644 deps/fast_yaml/ebin/fast_yaml.beam /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34/ebin/fast_yaml.beam
+/usr/bin/install -c -m 644 deps/fast_yaml/ebin/fast_yaml.app /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34/ebin/fast_yaml.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34/priv/lib
+rm -f /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34/priv/lib/fast_yaml.so; /usr/bin/install -c -m 644 deps/fast_yaml/priv/lib/fast_yaml.so /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34/priv/lib/fast_yaml.so
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34
+/usr/bin/install -c -m 644 deps/fast_yaml/LICENSE.txt /home/lvbo/ejabberd-install/lib/fast_yaml-1.0.34/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin
+/usr/bin/install -c -m 644 deps/idna/ebin/idna_table.beam /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin/idna_table.beam
+/usr/bin/install -c -m 644 deps/idna/ebin/idna_context.beam /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin/idna_context.beam
+/usr/bin/install -c -m 644 deps/idna/ebin/punycode.beam /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin/punycode.beam
+/usr/bin/install -c -m 644 deps/idna/ebin/idna_data.beam /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin/idna_data.beam
+/usr/bin/install -c -m 644 deps/idna/ebin/idna_mapping.beam /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin/idna_mapping.beam
+/usr/bin/install -c -m 644 deps/idna/ebin/idna_ucs.beam /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin/idna_ucs.beam
+/usr/bin/install -c -m 644 deps/idna/ebin/idna_bidi.beam /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin/idna_bidi.beam
+/usr/bin/install -c -m 644 deps/idna/ebin/idna.beam /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin/idna.beam
+/usr/bin/install -c -m 644 deps/idna/ebin/idna.app /home/lvbo/ejabberd-install/lib/idna-6.0.0/ebin/idna.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/idna-6.0.0
+/usr/bin/install -c -m 644 deps/idna/LICENSE /home/lvbo/ejabberd-install/lib/idna-6.0.0/LICENSE
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/jiffy-1.1.1/ebin
+/usr/bin/install -c -m 644 deps/jiffy/ebin/jiffy.beam /home/lvbo/ejabberd-install/lib/jiffy-1.1.1/ebin/jiffy.beam
+/usr/bin/install -c -m 644 deps/jiffy/ebin/jiffy_utf8.beam /home/lvbo/ejabberd-install/lib/jiffy-1.1.1/ebin/jiffy_utf8.beam
+/usr/bin/install -c -m 644 deps/jiffy/ebin/jiffy.app /home/lvbo/ejabberd-install/lib/jiffy-1.1.1/ebin/jiffy.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/jiffy-1.1.1/priv
+rm -f /home/lvbo/ejabberd-install/lib/jiffy-1.1.1/priv/jiffy.so; /usr/bin/install -c -m 644 deps/jiffy/priv/jiffy.so /home/lvbo/ejabberd-install/lib/jiffy-1.1.1/priv/jiffy.so
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/jiffy-1.1.1
+/usr/bin/install -c -m 644 deps/jiffy/LICENSE /home/lvbo/ejabberd-install/lib/jiffy-1.1.1/LICENSE
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty_okp_x25519.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty_okp_x25519.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_pkcs7.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_pkcs7.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve25519_libdecaf.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve25519_libdecaf.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_x448.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_x448.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty_okp_ed448ph.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty_okp_ed448ph.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty_ec.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty_ec.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_base64.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_base64.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jws_alg_none.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jws_alg_none.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_curve25519.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_curve25519.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jws_alg_ecdsa.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jws_alg_ecdsa.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_poly1305.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_poly1305.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jws_alg_rsa_pss.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jws_alg_rsa_pss.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_pkcs1.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_pkcs1.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_enc.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_enc.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_unsupported.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_unsupported.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jws_alg_hmac.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jws_alg_hmac.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_jason.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_jason.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_set.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_set.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_xchacha20_poly1305.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_xchacha20_poly1305.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jws_alg_rsa_pkcs1_v1_5.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jws_alg_rsa_pkcs1_v1_5.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_oct.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_oct.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_chacha20_poly1305_libsodium.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_chacha20_poly1305_libsodium.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty_okp_ed25519.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty_okp_ed25519.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_poison_compat_encoder.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_poison_compat_encoder.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty_rsa.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty_rsa.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve448_libdecaf.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve448_libdecaf.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_jsx.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_jsx.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_pkcs5.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_pkcs5.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty_okp_x448.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty_okp_x448.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_base64url.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_base64url.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_bench.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_bench.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg_rsa.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg_rsa.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_xchacha20_poly1305.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_xchacha20_poly1305.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_block_encryptor.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_block_encryptor.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve448_unsupported.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve448_unsupported.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_ojson.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_ojson.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_math.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_math.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_chacha20_poly1305.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_chacha20_poly1305.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_sha3_unsupported.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_sha3_unsupported.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_jiffy.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_jiffy.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_app.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_app.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve25519_libsodium.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve25519_libsodium.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_hchacha20.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_hchacha20.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve448_fallback.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve448_fallback.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_base64url.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_base64url.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jws.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jws.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_enc_c20p.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_enc_c20p.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_sha3_keccakf1600_nif.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_sha3_keccakf1600_nif.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve25519_unsupported.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve25519_unsupported.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg_c20p_kw.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg_c20p_kw.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jws_alg_poly1305.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jws_alg_poly1305.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_enc_xc20p.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_enc_xc20p.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty_okp_ed448.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty_okp_ed448.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_crypto_compat.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_crypto_compat.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_sha3_keccakf1600_driver.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_sha3_keccakf1600_driver.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_pem.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_pem.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve448_crypto.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve448_crypto.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_ed25519.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_ed25519.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_poison.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_poison.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jws_alg.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jws_alg.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_aes_kw.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_aes_kw.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_enc_aes.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_enc_aes.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_ed448.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_ed448.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg_pbes2.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg_pbes2.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwt.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwt.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg_dir.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg_dir.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jws_alg_eddsa.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jws_alg_eddsa.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_chacha20_poly1305_unsupported.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_chacha20_poly1305_unsupported.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_curve448.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_curve448.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_xchacha20_poly1305_unsupported.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_xchacha20_poly1305_unsupported.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_sha3.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_sha3.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg_ecdh_ss.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg_ecdh_ss.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_xchacha20_poly1305_crypto.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_xchacha20_poly1305_crypto.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_der.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_der.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_chacha20_poly1305.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_chacha20_poly1305.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_xchacha20.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_xchacha20.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_jsone.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_jsone.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_chacha20_poly1305_crypto.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_chacha20_poly1305_crypto.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty_okp_ed25519ph.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty_okp_ed25519ph.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_thoas.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_thoas.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_concat_kdf.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_concat_kdf.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_public_key.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_public_key.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_aes.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_aes.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_poison_lexical_encoder.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_poison_lexical_encoder.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_kty_oct.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_kty_oct.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_openssh_key.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_openssh_key.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_x25519.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_x25519.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_xchacha20_poly1305_libsodium.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_xchacha20_poly1305_libsodium.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve448.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve448.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve25519_fallback.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve25519_fallback.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg_aes_kw.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg_aes_kw.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_sha3.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_sha3.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_sup.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_sup.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg_xc20p_kw.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg_xc20p_kw.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_use_enc.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_use_enc.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve25519.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve25519.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_zip.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_zip.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg_ecdh_es.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg_ecdh_es.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_curve25519_crypto.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_curve25519_crypto.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_json_unsupported.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_json_unsupported.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwe_alg_ecdh_1pu.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwe_alg_ecdh_1pu.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwa_chacha20.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwa_chacha20.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_sha3_libdecaf.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_sha3_libdecaf.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_jwk_use_sig.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_jwk_use_sig.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose_server.beam /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose_server.beam
+/usr/bin/install -c -m 644 deps/jose/ebin/jose.app /home/lvbo/ejabberd-install/lib/jose-1.11.5/ebin/jose.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/jose-1.11.5/priv
+/usr/bin/install -c -m 644 deps/jose/priv/Dockerfile /home/lvbo/ejabberd-install/lib/jose-1.11.5/priv/Dockerfile
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/jose-1.11.5/include
+/usr/bin/install -c -m 644 deps/jose/include/jose_jwk.hrl /home/lvbo/ejabberd-install/lib/jose-1.11.5/include/jose_jwk.hrl
+/usr/bin/install -c -m 644 deps/jose/include/jose.hrl /home/lvbo/ejabberd-install/lib/jose-1.11.5/include/jose.hrl
+/usr/bin/install -c -m 644 deps/jose/include/jose_jwt.hrl /home/lvbo/ejabberd-install/lib/jose-1.11.5/include/jose_jwt.hrl
+/usr/bin/install -c -m 644 deps/jose/include/jose_jwe.hrl /home/lvbo/ejabberd-install/lib/jose-1.11.5/include/jose_jwe.hrl
+/usr/bin/install -c -m 644 deps/jose/include/jose_public_key.hrl /home/lvbo/ejabberd-install/lib/jose-1.11.5/include/jose_public_key.hrl
+/usr/bin/install -c -m 644 deps/jose/include/jose_compat.hrl /home/lvbo/ejabberd-install/lib/jose-1.11.5/include/jose_compat.hrl
+/usr/bin/install -c -m 644 deps/jose/include/jose_jws.hrl /home/lvbo/ejabberd-install/lib/jose-1.11.5/include/jose_jws.hrl
+/usr/bin/install -c -m 644 deps/jose/include/jose_base.hrl /home/lvbo/ejabberd-install/lib/jose-1.11.5/include/jose_base.hrl
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/jose-1.11.5
+/usr/bin/install -c -m 644 deps/jose/LICENSE.md /home/lvbo/ejabberd-install/lib/jose-1.11.5/LICENSE.md
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/mqtree-1.0.15/ebin
+/usr/bin/install -c -m 644 deps/mqtree/ebin/mqtree.beam /home/lvbo/ejabberd-install/lib/mqtree-1.0.15/ebin/mqtree.beam
+/usr/bin/install -c -m 644 deps/mqtree/ebin/mqtree.app /home/lvbo/ejabberd-install/lib/mqtree-1.0.15/ebin/mqtree.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/mqtree-1.0.15/priv/lib
+rm -f /home/lvbo/ejabberd-install/lib/mqtree-1.0.15/priv/lib/mqtree.so; /usr/bin/install -c -m 644 deps/mqtree/priv/lib/mqtree.so /home/lvbo/ejabberd-install/lib/mqtree-1.0.15/priv/lib/mqtree.so
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/mqtree-1.0.15
+/usr/bin/install -c -m 644 deps/mqtree/LICENSE /home/lvbo/ejabberd-install/lib/mqtree-1.0.15/LICENSE
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_acme-1.0.20/ebin
+/usr/bin/install -c -m 644 deps/p1_acme/ebin/p1_acme.beam /home/lvbo/ejabberd-install/lib/p1_acme-1.0.20/ebin/p1_acme.beam
+/usr/bin/install -c -m 644 deps/p1_acme/ebin/p1_acme_codec.beam /home/lvbo/ejabberd-install/lib/p1_acme-1.0.20/ebin/p1_acme_codec.beam
+/usr/bin/install -c -m 644 deps/p1_acme/ebin/p1_acme.app /home/lvbo/ejabberd-install/lib/p1_acme-1.0.20/ebin/p1_acme.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_acme-1.0.20
+/usr/bin/install -c -m 644 deps/p1_acme/LICENSE.txt /home/lvbo/ejabberd-install/lib/p1_acme-1.0.20/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/ebin
+/usr/bin/install -c -m 644 deps/p1_mysql/ebin/p1_mysql_auth.beam /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/ebin/p1_mysql_auth.beam
+/usr/bin/install -c -m 644 deps/p1_mysql/ebin/p1_mysql_app.beam /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/ebin/p1_mysql_app.beam
+/usr/bin/install -c -m 644 deps/p1_mysql/ebin/p1_mysql.beam /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/ebin/p1_mysql.beam
+/usr/bin/install -c -m 644 deps/p1_mysql/ebin/p1_mysql_conn.beam /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/ebin/p1_mysql_conn.beam
+/usr/bin/install -c -m 644 deps/p1_mysql/ebin/p1_mysql_sup.beam /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/ebin/p1_mysql_sup.beam
+/usr/bin/install -c -m 644 deps/p1_mysql/ebin/p1_mysql.app /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/ebin/p1_mysql.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/include
+/usr/bin/install -c -m 644 deps/p1_mysql/include/p1_mysql.hrl /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/include/p1_mysql.hrl
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20
+/usr/bin/install -c -m 644 deps/p1_mysql/COPYING /home/lvbo/ejabberd-install/lib/p1_mysql-1.0.20/COPYING
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/ebin
+/usr/bin/install -c -m 644 deps/p1_oauth2/ebin/oauth2_token.beam /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/ebin/oauth2_token.beam
+/usr/bin/install -c -m 644 deps/p1_oauth2/ebin/oauth2_response.beam /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/ebin/oauth2_response.beam
+/usr/bin/install -c -m 644 deps/p1_oauth2/ebin/oauth2_backend.beam /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/ebin/oauth2_backend.beam
+/usr/bin/install -c -m 644 deps/p1_oauth2/ebin/oauth2_priv_set.beam /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/ebin/oauth2_priv_set.beam
+/usr/bin/install -c -m 644 deps/p1_oauth2/ebin/oauth2.beam /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/ebin/oauth2.beam
+/usr/bin/install -c -m 644 deps/p1_oauth2/ebin/oauth2_token_generation.beam /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/ebin/oauth2_token_generation.beam
+/usr/bin/install -c -m 644 deps/p1_oauth2/ebin/oauth2_config.beam /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/ebin/oauth2_config.beam
+/usr/bin/install -c -m 644 deps/p1_oauth2/ebin/p1_oauth2.app /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/ebin/p1_oauth2.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11
+/usr/bin/install -c -m 644 deps/p1_oauth2/LICENSE /home/lvbo/ejabberd-install/lib/p1_oauth2-0.6.11/LICENSE
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_fsm.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_fsm.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_rand.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_rand.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_prof.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_prof.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_time_compat.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_time_compat.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_options.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_options.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_utils_sup.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_utils_sup.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/treap.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/treap.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_nif_utils.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_nif_utils.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_server.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_server.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_queue.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_queue.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_shaper.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_shaper.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_http.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_http.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_proxy_protocol.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_proxy_protocol.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_utils.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_utils.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_file_queue.beam /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_file_queue.beam
+/usr/bin/install -c -m 644 deps/p1_utils/ebin/p1_utils.app /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/ebin/p1_utils.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/include
+/usr/bin/install -c -m 644 deps/p1_utils/include/p1_queue.hrl /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/include/p1_queue.hrl
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25
+/usr/bin/install -c -m 644 deps/p1_utils/LICENSE.txt /home/lvbo/ejabberd-install/lib/p1_utils-1.0.25/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/pkix-1.0.9/ebin
+/usr/bin/install -c -m 644 deps/pkix/ebin/pkix_sup.beam /home/lvbo/ejabberd-install/lib/pkix-1.0.9/ebin/pkix_sup.beam
+/usr/bin/install -c -m 644 deps/pkix/ebin/pkix_app.beam /home/lvbo/ejabberd-install/lib/pkix-1.0.9/ebin/pkix_app.beam
+/usr/bin/install -c -m 644 deps/pkix/ebin/pkix.beam /home/lvbo/ejabberd-install/lib/pkix-1.0.9/ebin/pkix.beam
+/usr/bin/install -c -m 644 deps/pkix/ebin/pkix.app /home/lvbo/ejabberd-install/lib/pkix-1.0.9/ebin/pkix.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/pkix-1.0.9/priv
+/usr/bin/install -c -m 644 deps/pkix/priv/cacert.pem /home/lvbo/ejabberd-install/lib/pkix-1.0.9/priv/cacert.pem
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/pkix-1.0.9
+/usr/bin/install -c -m 644 deps/pkix/LICENSE /home/lvbo/ejabberd-install/lib/pkix-1.0.9/LICENSE
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/ebin
+/usr/bin/install -c -m 644 deps/stringprep/ebin/stringprep.beam /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/ebin/stringprep.beam
+/usr/bin/install -c -m 644 deps/stringprep/ebin/stringprep_sup.beam /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/ebin/stringprep_sup.beam
+/usr/bin/install -c -m 644 deps/stringprep/ebin/stringprep_app.beam /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/ebin/stringprep_app.beam
+/usr/bin/install -c -m 644 deps/stringprep/ebin/stringprep.app /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/ebin/stringprep.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/priv/lib
+rm -f /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/priv/lib/stringprep.so; /usr/bin/install -c -m 644 deps/stringprep/priv/lib/stringprep.so /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/priv/lib/stringprep.so
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/stringprep-1.0.29
+/usr/bin/install -c -m 644 deps/stringprep/LICENSE.txt /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/LICENSE.txt
+/usr/bin/install -c -m 644 deps/stringprep/LICENSE.TCL /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/LICENSE.TCL
+/usr/bin/install -c -m 644 deps/stringprep/LICENSE.ALL /home/lvbo/ejabberd-install/lib/stringprep-1.0.29/LICENSE.ALL
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin
+/usr/bin/install -c -m 644 deps/stun/ebin/turn_sm.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/turn_sm.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_listener_sup.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_listener_sup.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_codec.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_codec.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_app.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_app.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_logger.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_logger.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_acceptor.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_acceptor.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/turn_tmp_sup.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/turn_tmp_sup.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_sup.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_sup.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_listener.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_listener.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_test.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_test.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_shaper.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_shaper.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_acceptor_sup.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_acceptor_sup.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun_tmp_sup.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun_tmp_sup.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/turn.beam /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/turn.beam
+/usr/bin/install -c -m 644 deps/stun/ebin/stun.app /home/lvbo/ejabberd-install/lib/stun-1.2.6/ebin/stun.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/stun-1.2.6/include
+/usr/bin/install -c -m 644 deps/stun/include/stun.hrl /home/lvbo/ejabberd-install/lib/stun-1.2.6/include/stun.hrl
+/usr/bin/install -c -m 644 deps/stun/include/stun_logger.hrl /home/lvbo/ejabberd-install/lib/stun-1.2.6/include/stun_logger.hrl
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/stun-1.2.6
+/usr/bin/install -c -m 644 deps/stun/LICENSE.txt /home/lvbo/ejabberd-install/lib/stun-1.2.6/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/unicode_util_compat-0.3.1/ebin
+/usr/bin/install -c -m 644 deps/unicode_util_compat/ebin/unicode_util_compat.beam /home/lvbo/ejabberd-install/lib/unicode_util_compat-0.3.1/ebin/unicode_util_compat.beam
+/usr/bin/install -c -m 644 deps/unicode_util_compat/ebin/unicode_util_compat.app /home/lvbo/ejabberd-install/lib/unicode_util_compat-0.3.1/ebin/unicode_util_compat.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/unicode_util_compat-0.3.1
+/usr/bin/install -c -m 644 deps/unicode_util_compat/LICENSE /home/lvbo/ejabberd-install/lib/unicode_util_compat-0.3.1/LICENSE
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0215.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0215.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0023.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0023.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/rfc6121.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/rfc6121.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0313.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0313.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0297.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0297.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0352.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0352.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/captcha_form.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/captcha_form.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/pubsub_subscribe_options.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/pubsub_subscribe_options.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0172.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0172.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0078.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0078.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0220.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0220.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0054.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0054.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_util.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_util.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_stream_out.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_stream_out.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0231.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0231.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0084.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0084.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0405.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0405.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/scram.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/scram.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/pubsub_get_pending.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/pubsub_get_pending.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0048.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0048.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0355.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0355.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0059.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0059.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0049.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0049.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0260.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0260.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0039.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0039.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_lang.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_lang.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0153.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0153.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0138.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0138.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0234.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0234.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0016.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0016.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_tr.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_tr.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/jid.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/jid.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0264.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0264.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/p1_mucsub.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/p1_mucsub.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/pubsub_publish_options.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/pubsub_publish_options.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_sasl_plain.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_sasl_plain.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0363.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0363.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0045.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0045.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0013.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0013.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/mam_query.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/mam_query.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/pubsub_subscribe_authorization.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/pubsub_subscribe_authorization.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/muc_register.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/muc_register.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0092.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0092.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0319.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0319.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_codec.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_codec.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_sasl_scram.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_sasl_scram.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0359.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0359.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/push_summary.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/push_summary.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_socket.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_socket.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0279.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0279.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0158.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0158.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_stream_in.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_stream_in.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0022.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0022.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/pubsub_node_config.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/pubsub_node_config.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0066.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0066.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0333.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0333.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0166.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0166.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0417.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0417.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0261.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0261.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_config.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_config.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0198.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0198.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/rfc6120.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/rfc6120.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_sasl_digest.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_sasl_digest.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xdata_codec.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xdata_codec.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_sasl_anonymous.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_sasl_anonymous.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0199.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0199.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0030.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0030.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/http_upload.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/http_upload.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0085.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0085.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0202.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0202.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_sasl_oauth.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_sasl_oauth.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0203.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0203.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0060.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0060.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0065.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0065.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/muc_roominfo.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/muc_roominfo.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_sasl.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_sasl.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/rfc3921.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/rfc3921.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0221.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0221.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0357.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0357.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_stream_pkix.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_stream_pkix.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_codec_external.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_codec_external.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0249.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0249.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0317.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0317.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0050.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0050.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_stream.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_stream.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0300.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0300.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0115.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0115.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/flex_offline.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/flex_offline.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0004.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0004.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_uri.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_uri.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0377.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0377.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0356.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0356.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0047.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0047.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/muc_roomconfig.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/muc_roomconfig.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/XmppAddr.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/XmppAddr.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp_sup.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp_sup.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0012.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0012.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0430.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0430.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0191.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0191.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0369.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0369.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0055.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0055.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0033.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0033.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0131.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0131.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0403.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0403.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0328.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0328.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/pubsub_meta_data.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/pubsub_meta_data.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0184.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0184.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0114.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0114.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0334.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0334.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0280.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0280.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/muc_request.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/muc_request.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xep0077.beam /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xep0077.beam
+/usr/bin/install -c -m 644 deps/xmpp/ebin/xmpp.app /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/ebin/xmpp.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/priv/lib
+rm -f /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/priv/lib/xmpp_uri.so; /usr/bin/install -c -m 644 deps/xmpp/priv/lib/xmpp_uri.so /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/priv/lib/xmpp_uri.so
+rm -f /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/priv/lib/jid.so; /usr/bin/install -c -m 644 deps/xmpp/priv/lib/jid.so /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/priv/lib/jid.so
+rm -f /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/priv/lib/xmpp_lang.so; /usr/bin/install -c -m 644 deps/xmpp/priv/lib/xmpp_lang.so /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/priv/lib/xmpp_lang.so
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include
+/usr/bin/install -c -m 644 deps/xmpp/include/pubsub_publish_options.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/pubsub_publish_options.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/ns.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/ns.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/xmpp_codec.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/xmpp_codec.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/mam_query.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/mam_query.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/pubsub_node_config.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/pubsub_node_config.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/muc_request.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/muc_request.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/push_summary.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/push_summary.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/xmpp.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/xmpp.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/pubsub_subscribe_authorization.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/pubsub_subscribe_authorization.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/muc_register.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/muc_register.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/muc_roominfo.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/muc_roominfo.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/pubsub_subscribe_options.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/pubsub_subscribe_options.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/muc_roomconfig.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/muc_roomconfig.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/pubsub_meta_data.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/pubsub_meta_data.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/XmppAddr.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/XmppAddr.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/captcha_form.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/captcha_form.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/jid.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/jid.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/scram.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/scram.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/pubsub_get_pending.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/pubsub_get_pending.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/flex_offline.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/flex_offline.hrl
+/usr/bin/install -c -m 644 deps/xmpp/include/http_upload.hrl /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/include/http_upload.hrl
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/xmpp-1.6.0
+/usr/bin/install -c -m 644 deps/xmpp/LICENSE.txt /home/lvbo/ejabberd-install/lib/xmpp-1.6.0/LICENSE.txt
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/yconf-1.0.14/ebin
+/usr/bin/install -c -m 644 deps/yconf/ebin/yconf.beam /home/lvbo/ejabberd-install/lib/yconf-1.0.14/ebin/yconf.beam
+/usr/bin/install -c -m 644 deps/yconf/ebin/yconf.app /home/lvbo/ejabberd-install/lib/yconf-1.0.14/ebin/yconf.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/yconf-1.0.14
+/usr/bin/install -c -m 644 deps/yconf/LICENSE /home/lvbo/ejabberd-install/lib/yconf-1.0.14/LICENSE
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin
+/usr/bin/install -c -m 644 ebin/mod_delegation.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_delegation.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_doc.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_doc.beam
+/usr/bin/install -c -m 644 ebin/mod_private_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_private_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_muc.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_sip.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_sip.beam
+/usr/bin/install -c -m 644 ebin/node_pep.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/node_pep.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_pkix.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_pkix.beam
+/usr/bin/install -c -m 644 ebin/mod_mqtt_session.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mqtt_session.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_s2s_in.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_s2s_in.beam
+/usr/bin/install -c -m 644 ebin/mod_mix_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mix_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_privilege.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_privilege.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_backend_sup.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_backend_sup.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_redis.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_redis.beam
+/usr/bin/install -c -m 644 ebin/mod_fail2ban_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_fail2ban_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_vcard_ldap.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_vcard_ldap.beam
+/usr/bin/install -c -m 644 ebin/xml_compress.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/xml_compress.beam
+/usr/bin/install -c -m 644 ebin/mod_proxy65_service.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_proxy65_service.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_db_sup.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_db_sup.beam
+/usr/bin/install -c -m 644 ebin/mod_last_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_last_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_http_upload_quota.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_http_upload_quota.beam
+/usr/bin/install -c -m 644 ebin/mod_mqtt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mqtt.beam
+/usr/bin/install -c -m 644 ebin/node_flat.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/node_flat.beam
+/usr/bin/install -c -m 644 ebin/translate.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/translate.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_sql_pt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_sql_pt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_systemd.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_systemd.beam
+/usr/bin/install -c -m 644 ebin/node_pep_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/node_pep_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_proxy65_stream.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_proxy65_stream.beam
+/usr/bin/install -c -m 644 ebin/mod_block_strangers.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_block_strangers.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_commands_doc.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_commands_doc.beam
+/usr/bin/install -c -m 644 ebin/str.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/str.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_http.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_http.beam
+/usr/bin/install -c -m 644 ebin/mod_vcard_xupdate_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_vcard_xupdate_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_muc_sup.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc_sup.beam
+/usr/bin/install -c -m 644 ebin/mod_shared_roster.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_shared_roster.beam
+/usr/bin/install -c -m 644 ebin/mod_version_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_version_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_http_upload_quota_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_http_upload_quota_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_last.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_last.beam
+/usr/bin/install -c -m 644 ebin/mod_caps_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_caps_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_mqtt_bridge_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mqtt_bridge_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_ctl.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_ctl.beam
+/usr/bin/install -c -m 644 ebin/mod_mqtt_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mqtt_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_push.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_push.beam
+/usr/bin/install -c -m 644 ebin/node_flat_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/node_flat_sql.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_redis_sup.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_redis_sup.beam
+/usr/bin/install -c -m 644 ebin/mod_offline_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_offline_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_muc_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_offline.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_offline.beam
+/usr/bin/install -c -m 644 ebin/mod_mqtt_bridge.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mqtt_bridge.beam
+/usr/bin/install -c -m 644 ebin/mod_shared_roster_ldap.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_shared_roster_ldap.beam
+/usr/bin/install -c -m 644 ebin/eldap.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/eldap.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_service.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_service.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_bosh.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_bosh.beam
+/usr/bin/install -c -m 644 ebin/mod_shared_roster_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_shared_roster_sql.beam
+/usr/bin/install -c -m 644 ebin/pubsub_subscription.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/pubsub_subscription.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_c2s_config.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_c2s_config.beam
+/usr/bin/install -c -m 644 ebin/mod_last_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_last_sql.beam
+/usr/bin/install -c -m 644 ebin/eldap_filter_yecc.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/eldap_filter_yecc.beam
+/usr/bin/install -c -m 644 ebin/mod_push_keepalive.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_push_keepalive.beam
+/usr/bin/install -c -m 644 ebin/mod_carboncopy.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_carboncopy.beam
+/usr/bin/install -c -m 644 ebin/mod_stun_disco_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_stun_disco_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_pubsub_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_pubsub_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_push_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_push_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_http_api.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_http_api.beam
+/usr/bin/install -c -m 644 ebin/ELDAPv3.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ELDAPv3.beam
+/usr/bin/install -c -m 644 ebin/mod_adhoc.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_adhoc.beam
+/usr/bin/install -c -m 644 ebin/mod_block_strangers_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_block_strangers_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_sic.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_sic.beam
+/usr/bin/install -c -m 644 ebin/mod_mix_pam.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mix_pam.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_hooks.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_hooks.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_web_admin.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_web_admin.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_s2s.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_s2s.beam
+/usr/bin/install -c -m 644 ebin/mod_register_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_register_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_oauth.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_oauth.beam
+/usr/bin/install -c -m 644 ebin/mod_privacy_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_privacy_sql.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_sm_redis.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_sm_redis.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_options_doc.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_options_doc.beam
+/usr/bin/install -c -m 644 ebin/gen_iq_handler.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/gen_iq_handler.beam
+/usr/bin/install -c -m 644 ebin/mod_announce_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_announce_mnesia.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_access_permissions.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_access_permissions.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_local.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_local.beam
+/usr/bin/install -c -m 644 ebin/jd2ejd.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/jd2ejd.beam
+/usr/bin/install -c -m 644 ebin/mod_jidprep_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_jidprep_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_mix_pam_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mix_pam_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_bosh.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_bosh.beam
+/usr/bin/install -c -m 644 ebin/acl.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/acl.beam
+/usr/bin/install -c -m 644 ebin/mod_roster_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_roster_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_multicast_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_multicast_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_cluster.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_cluster.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_auth.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_auth.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_oauth_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_oauth_sql.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_tmp_sup.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_tmp_sup.beam
+/usr/bin/install -c -m 644 ebin/mod_privacy_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_privacy_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_proxy65_redis.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_proxy65_redis.beam
+/usr/bin/install -c -m 644 ebin/mod_sip_proxy.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_sip_proxy.beam
+/usr/bin/install -c -m 644 ebin/mod_client_state_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_client_state_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_legacy_auth.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_legacy_auth.beam
+/usr/bin/install -c -m 644 ebin/mod_service_log_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_service_log_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_s2s_dialback_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_s2s_dialback_opt.beam
+/usr/bin/install -c -m 644 ebin/nodetree_tree_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/nodetree_tree_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_proxy65_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_proxy65_sql.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_auth_ldap.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_auth_ldap.beam
+/usr/bin/install -c -m 644 ebin/mod_mix_pam_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mix_pam_mnesia.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_c2s.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_c2s.beam
+/usr/bin/install -c -m 644 ebin/mod_blocking.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_blocking.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_logger.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_logger.beam
+/usr/bin/install -c -m 644 ebin/mod_roster_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_roster_mnesia.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_auth_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_auth_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_host_meta_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_host_meta_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_privacy_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_privacy_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_configure.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_configure.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_piefxis.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_piefxis.beam
+/usr/bin/install -c -m 644 ebin/extauth.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/extauth.beam
+/usr/bin/install -c -m 644 ebin/mod_bosh_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_bosh_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_http_upload_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_http_upload_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd.beam
+/usr/bin/install -c -m 644 ebin/mod_mix.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mix.beam
+/usr/bin/install -c -m 644 ebin/mod_admin_extra.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_admin_extra.beam
+/usr/bin/install -c -m 644 ebin/mod_mam_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mam_mnesia.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_oauth_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_oauth_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_announce_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_announce_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_private.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_private.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_commands.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_commands.beam
+/usr/bin/install -c -m 644 ebin/mod_proxy65_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_proxy65_mnesia.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_web.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_web.beam
+/usr/bin/install -c -m 644 ebin/gen_pubsub_nodetree.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/gen_pubsub_nodetree.beam
+/usr/bin/install -c -m 644 ebin/mod_avatar_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_avatar_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_http_fileserver_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_http_fileserver_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_config.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_config.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_xmlrpc.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_xmlrpc.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_auth_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_auth_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mqtt_codec.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mqtt_codec.beam
+/usr/bin/install -c -m 644 ebin/mod_fail2ban.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_fail2ban.beam
+/usr/bin/install -c -m 644 ebin/mod_proxy65_lib.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_proxy65_lib.beam
+/usr/bin/install -c -m 644 ebin/mod_http_api_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_http_api_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_stream_mgmt_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_stream_mgmt_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_mam_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mam_sql.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_listener.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_listener.beam
+/usr/bin/install -c -m 644 ebin/mod_private_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_private_sql.beam
+/usr/bin/install -c -m 644 ebin/pubsub_migrate.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/pubsub_migrate.beam
+/usr/bin/install -c -m 644 ebin/ejd2sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejd2sql.beam
+/usr/bin/install -c -m 644 ebin/extauth_sup.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/extauth_sup.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_sm_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_sm_sql.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_sup.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_sup.beam
+/usr/bin/install -c -m 644 ebin/mod_roster.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_roster.beam
+/usr/bin/install -c -m 644 ebin/mod_bosh_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_bosh_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_mqtt_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mqtt_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_vcard_xupdate.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_vcard_xupdate.beam
+/usr/bin/install -c -m 644 ebin/rest.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/rest.beam
+/usr/bin/install -c -m 644 ebin/mod_roster_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_roster_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_version.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_version.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_s2s_out.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_s2s_out.beam
+/usr/bin/install -c -m 644 ebin/mod_metrics_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_metrics_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_websocket_codec.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_websocket_codec.beam
+/usr/bin/install -c -m 644 ebin/mod_caps.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_caps.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_admin_update_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_admin_update_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_conversejs_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_conversejs_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_offline_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_offline_mnesia.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_system_monitor.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_system_monitor.beam
+/usr/bin/install -c -m 644 ebin/mod_jidprep.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_jidprep.beam
+/usr/bin/install -c -m 644 ebin/mod_private_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_private_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_time.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_time.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_sql_sup.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_sql_sup.beam
+/usr/bin/install -c -m 644 ebin/mod_proxy65_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_proxy65_opt.beam
+/usr/bin/install -c -m 644 ebin/eldap_filter.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/eldap_filter.beam
+/usr/bin/install -c -m 644 ebin/ext_mod.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ext_mod.beam
+/usr/bin/install -c -m 644 ebin/eldap_utils.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/eldap_utils.beam
+/usr/bin/install -c -m 644 ebin/pubsub_db_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/pubsub_db_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_muc_admin_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc_admin_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_metrics.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_metrics.beam
+/usr/bin/install -c -m 644 ebin/mod_muc_log_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc_log_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_caps_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_caps_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_muc_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_stun_disco.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_stun_disco.beam
+/usr/bin/install -c -m 644 ebin/mod_pubsub.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_pubsub.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_app.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_app.beam
+/usr/bin/install -c -m 644 ebin/mod_service_log.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_service_log.beam
+/usr/bin/install -c -m 644 ebin/econf.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/econf.beam
+/usr/bin/install -c -m 644 ebin/nodetree_virtual.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/nodetree_virtual.beam
+/usr/bin/install -c -m 644 ebin/mod_conversejs.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_conversejs.beam
+/usr/bin/install -c -m 644 ebin/mod_pubsub_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_pubsub_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_adhoc_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_adhoc_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_bosh_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_bosh_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_auth_external.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_auth_external.beam
+/usr/bin/install -c -m 644 ebin/mod_sip.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_sip.beam
+/usr/bin/install -c -m 644 ebin/mod_ping.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_ping.beam
+/usr/bin/install -c -m 644 ebin/mod_shared_roster_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_shared_roster_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_caps_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_caps_mnesia.beam
+/usr/bin/install -c -m 644 ebin/eldap_pool.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/eldap_pool.beam
+/usr/bin/install -c -m 644 ebin/mod_pubsub_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_pubsub_sql.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_option.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_option.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_auth_pam.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_auth_pam.beam
+/usr/bin/install -c -m 644 ebin/gen_mod.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/gen_mod.beam
+/usr/bin/install -c -m 644 ebin/mod_mix_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mix_sql.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_sm.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_sm.beam
+/usr/bin/install -c -m 644 ebin/mod_vcard.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_vcard.beam
+/usr/bin/install -c -m 644 ebin/gen_pubsub_node.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/gen_pubsub_node.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_batch.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_batch.beam
+/usr/bin/install -c -m 644 ebin/mod_vcard_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_vcard_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_disco.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_disco.beam
+/usr/bin/install -c -m 644 ebin/pubsub_subscription_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/pubsub_subscription_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_ping_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_ping_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_vcard_mnesia_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_vcard_mnesia_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_last_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_last_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_muc_log.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc_log.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_auth_jwt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_auth_jwt.beam
+/usr/bin/install -c -m 644 ebin/prosody2ejabberd.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/prosody2ejabberd.beam
+/usr/bin/install -c -m 644 ebin/mod_sip_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_sip_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_muc_room.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc_room.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_options.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_options.beam
+/usr/bin/install -c -m 644 ebin/mod_pres_counter_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_pres_counter_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_push_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_push_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_stats.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_stats.beam
+/usr/bin/install -c -m 644 ebin/mod_delegation_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_delegation_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_register_web.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_register_web.beam
+/usr/bin/install -c -m 644 ebin/mod_push_keepalive_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_push_keepalive_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_mix_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mix_mnesia.beam
+/usr/bin/install -c -m 644 ebin/misc.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/misc.beam
+/usr/bin/install -c -m 644 ebin/mod_vcard_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_vcard_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_muc_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_iq.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_iq.beam
+/usr/bin/install -c -m 644 ebin/mod_mam.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mam.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_admin.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_admin.beam
+/usr/bin/install -c -m 644 ebin/elixir_logger_backend.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/elixir_logger_backend.beam
+/usr/bin/install -c -m 644 ebin/mod_privilege_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_privilege_opt.beam
+/usr/bin/install -c -m 644 ebin/win32_dns.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/win32_dns.beam
+/usr/bin/install -c -m 644 ebin/mod_multicast.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_multicast.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_router.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_router.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_shaper.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_shaper.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_config_transformer.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_config_transformer.beam
+/usr/bin/install -c -m 644 ebin/mod_pres_counter.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_pres_counter.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_router_redis.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_router_redis.beam
+/usr/bin/install -c -m 644 ebin/mod_register.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_register.beam
+/usr/bin/install -c -m 644 ebin/mod_proxy65.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_proxy65.beam
+/usr/bin/install -c -m 644 ebin/mod_mqtt_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mqtt_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_client_state.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_client_state.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_sm_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_sm_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_vcard_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_vcard_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_vcard_ldap_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_vcard_ldap_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_s2s_dialback.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_s2s_dialback.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_update.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_update.beam
+/usr/bin/install -c -m 644 ebin/mod_sip_registrar.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_sip_registrar.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_stun.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_stun.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_websocket.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_websocket.beam
+/usr/bin/install -c -m 644 ebin/pubsub_index.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/pubsub_index.beam
+/usr/bin/install -c -m 644 ebin/mod_disco_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_disco_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_shared_roster_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_shared_roster_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_router_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_router_sql.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_acme.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_acme.beam
+/usr/bin/install -c -m 644 ebin/mod_host_meta.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_host_meta.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_router_multicast.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_router_multicast.beam
+/usr/bin/install -c -m 644 ebin/nodetree_tree.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/nodetree_tree.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_regexp.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_regexp.beam
+/usr/bin/install -c -m 644 ebin/mod_http_upload.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_http_upload.beam
+/usr/bin/install -c -m 644 ebin/mod_push_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_push_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_mqtt_bridge_session.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mqtt_bridge_session.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_captcha.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_captcha.beam
+/usr/bin/install -c -m 644 ebin/mod_offline_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_offline_opt.beam
+/usr/bin/install -c -m 644 ebin/mod_announce.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_announce.beam
+/usr/bin/install -c -m 644 ebin/mod_shared_roster_ldap_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_shared_roster_ldap_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_avatar.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_avatar.beam
+/usr/bin/install -c -m 644 ebin/mod_muc_admin.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_muc_admin.beam
+/usr/bin/install -c -m 644 ebin/mod_http_fileserver.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_http_fileserver.beam
+/usr/bin/install -c -m 644 ebin/mod_mqtt_ws.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mqtt_ws.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_oauth_rest.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_oauth_rest.beam
+/usr/bin/install -c -m 644 ebin/mod_mix_pam_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mix_pam_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_router_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_router_mnesia.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_auth_anonymous.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_auth_anonymous.beam
+/usr/bin/install -c -m 644 ebin/proxy_protocol.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/proxy_protocol.beam
+/usr/bin/install -c -m 644 ebin/mod_privacy.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_privacy.beam
+/usr/bin/install -c -m 644 ebin/mod_stream_mgmt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_stream_mgmt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_http_ws.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_http_ws.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_cluster_mnesia.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_cluster_mnesia.beam
+/usr/bin/install -c -m 644 ebin/mod_announce_sql.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_announce_sql.beam
+/usr/bin/install -c -m 644 ebin/mod_bosh_redis.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_bosh_redis.beam
+/usr/bin/install -c -m 644 ebin/mod_mam_opt.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/mod_mam_opt.beam
+/usr/bin/install -c -m 644 ebin/ejabberd_old_config.beam /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd_old_config.beam
+/usr/bin/install -c -m 644 ebin/ejabberd.app /home/lvbo/ejabberd-install/lib/ejabberd-22.10/ebin/ejabberd.app
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs
+/usr/bin/install -c -m 644 priv/msgs/it.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/it.msg
+/usr/bin/install -c -m 644 priv/msgs/pl.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/pl.msg
+/usr/bin/install -c -m 644 priv/msgs/es.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/es.msg
+/usr/bin/install -c -m 644 priv/msgs/hu.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/hu.msg
+/usr/bin/install -c -m 644 priv/msgs/cs.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/cs.msg
+/usr/bin/install -c -m 644 priv/msgs/id.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/id.msg
+/usr/bin/install -c -m 644 priv/msgs/pt.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/pt.msg
+/usr/bin/install -c -m 644 priv/msgs/he.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/he.msg
+/usr/bin/install -c -m 644 priv/msgs/zh.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/zh.msg
+/usr/bin/install -c -m 644 priv/msgs/ar.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/ar.msg
+/usr/bin/install -c -m 644 priv/msgs/th.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/th.msg
+/usr/bin/install -c -m 644 priv/msgs/uk.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/uk.msg
+/usr/bin/install -c -m 644 priv/msgs/gl.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/gl.msg
+/usr/bin/install -c -m 644 priv/msgs/nl.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/nl.msg
+/usr/bin/install -c -m 644 priv/msgs/wa.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/wa.msg
+/usr/bin/install -c -m 644 priv/msgs/no.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/no.msg
+/usr/bin/install -c -m 644 priv/msgs/sk.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/sk.msg
+/usr/bin/install -c -m 644 priv/msgs/sq.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/sq.msg
+/usr/bin/install -c -m 644 priv/msgs/el.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/el.msg
+/usr/bin/install -c -m 644 priv/msgs/ru.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/ru.msg
+/usr/bin/install -c -m 644 priv/msgs/de.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/de.msg
+/usr/bin/install -c -m 644 priv/msgs/ja.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/ja.msg
+/usr/bin/install -c -m 644 priv/msgs/tr.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/tr.msg
+/usr/bin/install -c -m 644 priv/msgs/eo.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/eo.msg
+/usr/bin/install -c -m 644 priv/msgs/ca.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/ca.msg
+/usr/bin/install -c -m 644 priv/msgs/sv.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/sv.msg
+/usr/bin/install -c -m 644 priv/msgs/fr.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/fr.msg
+/usr/bin/install -c -m 644 priv/msgs/pt-br.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/pt-br.msg
+/usr/bin/install -c -m 644 priv/msgs/vi.msg /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/msgs/vi.msg
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/css
+/usr/bin/install -c -m 644 priv/css/oauth.css /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/css/oauth.css
+/usr/bin/install -c -m 644 priv/css/register.css /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/css/register.css
+/usr/bin/install -c -m 644 priv/css/muc.css /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/css/muc.css
+/usr/bin/install -c -m 644 priv/css/admin.css /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/css/admin.css
+/usr/bin/install -c -m 644 priv/css/bosh.css /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/css/bosh.css
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img
+/usr/bin/install -c -m 644 priv/img/vcss.png /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img/vcss.png
+/usr/bin/install -c -m 644 priv/img/favicon.png /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img/favicon.png
+/usr/bin/install -c -m 644 priv/img/admin-logo-fill.png /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img/admin-logo-fill.png
+/usr/bin/install -c -m 644 priv/img/oauth-logo.png /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img/oauth-logo.png
+/usr/bin/install -c -m 644 priv/img/powered-by-erlang.png /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img/powered-by-erlang.png
+/usr/bin/install -c -m 644 priv/img/powered-by-ejabberd.png /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img/powered-by-ejabberd.png
+/usr/bin/install -c -m 644 priv/img/admin-logo.png /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img/admin-logo.png
+/usr/bin/install -c -m 644 priv/img/valid-xhtml10.png /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img/valid-xhtml10.png
+/usr/bin/install -c -m 644 priv/img/bosh-logo.png /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/img/bosh-logo.png
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/js
+/usr/bin/install -c -m 644 priv/js/admin.js /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/js/admin.js
+/usr/bin/install -c -m 644 priv/js/muc.js /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/js/muc.js
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include
+/usr/bin/install -c -m 644 include/mod_offline.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_offline.hrl
+/usr/bin/install -c -m 644 include/mod_muc.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_muc.hrl
+/usr/bin/install -c -m 644 include/eldap.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/eldap.hrl
+/usr/bin/install -c -m 644 include/mod_announce.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_announce.hrl
+/usr/bin/install -c -m 644 include/ejabberd_sm.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_sm.hrl
+/usr/bin/install -c -m 644 include/mod_private.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_private.hrl
+/usr/bin/install -c -m 644 include/mod_vcard.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_vcard.hrl
+/usr/bin/install -c -m 644 include/mod_privacy.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_privacy.hrl
+/usr/bin/install -c -m 644 include/ELDAPv3.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ELDAPv3.hrl
+/usr/bin/install -c -m 644 include/ejabberd_stacktrace.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_stacktrace.hrl
+/usr/bin/install -c -m 644 include/mod_muc_room.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_muc_room.hrl
+/usr/bin/install -c -m 644 include/ejabberd_sql.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_sql.hrl
+/usr/bin/install -c -m 644 include/mod_mam.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_mam.hrl
+/usr/bin/install -c -m 644 include/mqtt.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mqtt.hrl
+/usr/bin/install -c -m 644 include/mod_roster.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_roster.hrl
+/usr/bin/install -c -m 644 include/ejabberd_commands.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_commands.hrl
+/usr/bin/install -c -m 644 include/ejabberd_oauth.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_oauth.hrl
+/usr/bin/install -c -m 644 include/mod_proxy65.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_proxy65.hrl
+/usr/bin/install -c -m 644 include/pubsub.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/pubsub.hrl
+/usr/bin/install -c -m 644 include/ejabberd_web_admin.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_web_admin.hrl
+/usr/bin/install -c -m 644 include/ejabberd_router.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_router.hrl
+/usr/bin/install -c -m 644 include/ejabberd_sql_pt.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_sql_pt.hrl
+/usr/bin/install -c -m 644 include/http_bind.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/http_bind.hrl
+/usr/bin/install -c -m 644 include/mod_caps.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_caps.hrl
+/usr/bin/install -c -m 644 include/translate.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/translate.hrl
+/usr/bin/install -c -m 644 include/ejabberd_http.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_http.hrl
+/usr/bin/install -c -m 644 include/mod_shared_roster.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_shared_roster.hrl
+/usr/bin/install -c -m 644 include/ejabberd_auth.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_auth.hrl
+/usr/bin/install -c -m 644 include/mod_last.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_last.hrl
+/usr/bin/install -c -m 644 include/ejabberd_ctl.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/ejabberd_ctl.hrl
+/usr/bin/install -c -m 644 include/bosh.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/bosh.hrl
+/usr/bin/install -c -m 644 include/mod_push.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/mod_push.hrl
+/usr/bin/install -c -m 644 include/logger.hrl /home/lvbo/ejabberd-install/lib/ejabberd-22.10/include/logger.hrl
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ejabberd-22.10/.
+/usr/bin/install -c -m 644 COPYING /home/lvbo/ejabberd-install/lib/ejabberd-22.10/COPYING
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/bin
+/usr/bin/install -c -m 755 -o lvbo tools/captcha.sh /home/lvbo/ejabberd-install/lib/ejabberd-22.10/priv/bin/captcha.sh
+make[1]: 离开目录“/home/lvbo/Projects/ejabberd-develop/ejabberd”
+#
+# Configuration files
+/usr/bin/install -c -d -m 750 -g lvbo /home/lvbo/ejabberd-install/etc/ejabberd
+[ -f /home/lvbo/ejabberd-install/etc/ejabberd/ejabberd.yml ] \
+	&& /usr/bin/install -c -b -m 640 -g lvbo ejabberd.yml.example /home/lvbo/ejabberd-install/etc/ejabberd/ejabberd.yml-new \
+	|| /usr/bin/install -c -b -m 640 -g lvbo ejabberd.yml.example /home/lvbo/ejabberd-install/etc/ejabberd/ejabberd.yml
+[ -f /home/lvbo/ejabberd-install/etc/ejabberd/ejabberdctl.cfg ] \
+	&& /usr/bin/install -c -b -m 640 -g lvbo ejabberdctl.cfg.example /home/lvbo/ejabberd-install/etc/ejabberd/ejabberdctl.cfg-new \
+	|| /usr/bin/install -c -b -m 640 -g lvbo ejabberdctl.cfg.example /home/lvbo/ejabberd-install/etc/ejabberd/ejabberdctl.cfg
+/usr/bin/install -c -b -m 644 -g lvbo inetrc /home/lvbo/ejabberd-install/etc/ejabberd/inetrc
+#
+# Administration script
+[ -d /home/lvbo/ejabberd-install/sbin ] || /usr/bin/install -c -d -m 755 /home/lvbo/ejabberd-install/sbin
+/usr/bin/install -c -m 550 -g lvbo ejabberdctl.example /home/lvbo/ejabberd-install/sbin/ejabberdctl
+# Elixir binaries
+[ -d /home/lvbo/ejabberd-install/bin ] || /usr/bin/install -c -d -m 755 /home/lvbo/ejabberd-install/bin
+[ -f deps/elixir/bin/iex ] && /usr/bin/install -c -m 550 -g lvbo deps/elixir/bin/iex /home/lvbo/ejabberd-install/bin/iex || true
+[ -f deps/elixir/bin/elixir ] && /usr/bin/install -c -m 550 -g lvbo deps/elixir/bin/elixir /home/lvbo/ejabberd-install/bin/elixir || true
+[ -f deps/elixir/bin/mix ] && /usr/bin/install -c -m 550 -g lvbo deps/elixir/bin/mix /home/lvbo/ejabberd-install/bin/mix || true
+#
+# Spool directory
+/usr/bin/install -c -d -m 750 -o lvbo /home/lvbo/ejabberd-install/var/lib/ejabberd
+chown -R lvbo /home/lvbo/ejabberd-install/var/lib/ejabberd >&1
+chmod -R 750 /home/lvbo/ejabberd-install/var/lib/ejabberd
+#
+# Log directory
+/usr/bin/install -c -d -m 750 -o lvbo /home/lvbo/ejabberd-install/var/log/ejabberd
+chown -R lvbo /home/lvbo/ejabberd-install/var/log/ejabberd >&1
+chmod -R 750 /home/lvbo/ejabberd-install/var/log/ejabberd
+#
+# Documentation
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/share/man/man5
+/usr/bin/install -c -d /home/lvbo/ejabberd-install/share/doc/ejabberd
+[ -f man/ejabberd.yml.5 ] \
+	&& /usr/bin/install -c -m 644 man/ejabberd.yml.5 /home/lvbo/ejabberd-install/share/man/man5 \
+	|| echo "Man page not included in sources"
+/usr/bin/install -c -m 644 COPYING /home/lvbo/ejabberd-install/share/doc/ejabberd

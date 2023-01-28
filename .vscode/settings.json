@@ -1,5 +1,4 @@
 {
-    "editor.tabSize": 8,
     "remote.portsAttributes": {
         "1883": {"label": "MQTT", "onAutoForward": "silent"},
         "4369": {"label": "EPMD", "onAutoForward": "silent"},

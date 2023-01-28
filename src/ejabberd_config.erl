@@ -84,8 +84,8 @@ load(Path) ->
 		[named_table, public, {read_concurrency, true}]),
     case load_file(ConfigFile) of
 	ok ->
-	    set_shared_key(),
-	    set_node_start(UnixTime),
+	    set_shared_key(), % 设置cookie
+	    set_node_start(UnixTime), % 保存启动时间
 	    ?INFO_MSG("Configuration loaded successfully", []);
 	Err ->
 	    Err
@@ -112,6 +112,7 @@ reload() ->
 		    end, DelHosts),
 		  ejabberd_hooks:run(config_reloaded, []),
 		  delete_host_options(DelHosts),
+		  io:format("22333333333"),
 		  ?INFO_MSG("Configuration reloaded successfully", []);
 	      Err ->
 		  ?ERROR_MSG("Configuration reload aborted: ~ts",
@@ -486,6 +487,7 @@ read_file(File) ->
 
 read_file(File, Opts) ->
     {Opts1, Opts2} = proplists:split(Opts, [replace_macros, include_files]),
+    % Ret 是已经解析完成后的配置文件
     Ret = case filename:extension(File) of
 	      Ex when Ex == <<".yml">> orelse Ex == <<".yaml">> ->
 		  Files = case proplists:get_bool(include_modules_configs, Opts2) of
@@ -531,10 +533,12 @@ read_erlang_file(File, _) ->
 validate(Y1) ->
     case pre_validate(Y1) of
 	{ok, Y2} ->
+		?INFO_MSG("Y2 ~p", [Y2]),
 	    set_loglevel(proplists:get_value(loglevel, Y2, info)),
 	    ejabberd_logger:set_modules_fully_logged(proplists:get_value(log_modules_fully, Y2, [])),
 	    case ejabberd_config_transformer:map_reduce(Y2) of
 		{ok, Y3} ->
+			?INFO_MSG("Y2 ~p", [Y3]),
 		    Hosts = proplists:get_value(hosts, Y3),
 		    Version = proplists:get_value(version, Y3, version()),
 		    create_tmp_config(),
@@ -614,6 +618,7 @@ abort(Err) ->
 
 -spec set_host_config([{atom(), term()}]) -> {ok, host_config()} | error_return().
 set_host_config(Opts) ->
+	?INFO_MSG("Opts ~p", [Opts]),
     Map1 = lists:foldl(
 	     fun({Opt, Val}, M) when Opt /= host_config,
 				     Opt /= append_host_config ->

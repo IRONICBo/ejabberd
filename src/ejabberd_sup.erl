@@ -36,6 +36,8 @@ start_link() ->
     supervisor:start_link({local, ?MODULE}, ?MODULE, []).
 
 init([]) ->
+	% one_for_one 只有当前进程会被重启
+	% 如果1s内重启次数超过10则终止所有子进程和自身
     {ok, {{one_for_one, 10, 1},
 	  [worker(ejabberd_systemd),
 	   worker(ejabberd_hooks),

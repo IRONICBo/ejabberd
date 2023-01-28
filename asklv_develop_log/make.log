@@ -1,0 +1,3 @@
+/usr/lib/erlang/bin/escript rebar skip_deps=true compile
+==> rel (compile)
+==> ejabberd (compile)

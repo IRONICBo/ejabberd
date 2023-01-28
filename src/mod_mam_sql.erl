@@ -200,11 +200,43 @@ store(Pkt, LServer, {LUser, LHost}, Type, Peer, Nick, _Dir, TS) ->
 	               "kind=%(SType)s",
 	               "nick=%(Nick)s"])) of
 		{updated, _} ->
+			JsonBody = {[
+				{username, SUser},
+				{server_host, LServer},
+				{timestamp, TS},
+				{peer, LPeer},
+				{bare_peer, BarePeer},
+				{xml, XML},
+				{txt, Body},
+				{kind, SType},
+				{nick, Nick}
+			]},
+			EncodedJsonBody = jiffy:encode(JsonBody),
+			?INFO_MSG("[Asklv] [mod_mam_sql:store] : to_json: ~p", [EncodedJsonBody]),
+			% todo: 将数据包发送到http接口中
+			ejabberd_hooks:run(msg_forward, [LServer, EncodedJsonBody]),
+			% http_post(EncodedJsonBody),
 		    ok;
 		Err ->
 		    Err
 	    end
 	end.
+
+% todo: 这里可以拆分为进程间通信，将这部分的操作解耦合
+% http_post(EncodedJsonBody) ->
+% 	Method = post,
+% 	URL = "http://192.168.12.222:8081/msg",
+% 	Header = [],
+% 	Type = "application/x-www-form-urlencoded",
+% 	Body = "data=" ++ binary:bin_to_list(EncodedJsonBody),
+% 	HTTPOptions = [],
+% 	Options = [],
+% 	case httpc:request(Method, {URL, Header, Type, Body}, HTTPOptions, Options) of
+% 		{ok, {_, _, Body}} ->
+% 			?INFO_MSG("[Asklv] [HTTP Post] receive body ~p", [Body]); % 这里是子句
+% 		{error, Reason} ->
+% 			?INFO_MSG("[Asklv] [HTTP Post] error cause ~p", [Reason])
+% 	end.
 
 write_prefs(LUser, _LServer, #archive_prefs{default = Default,
 					   never = Never,

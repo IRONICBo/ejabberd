@@ -44,3 +44,4 @@ Mnesia.nonode@nohost/
 /ejabberd-*.rpm
 /ejabberd-*.run
 /ejabberd-*.tar.gz
+cert/-out

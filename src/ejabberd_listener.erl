@@ -63,13 +63,15 @@
 -define(TCP_SEND_TIMEOUT, 15000).
 
 start_link() ->
-    supervisor:start_link({local, ?MODULE}, ?MODULE, []).
+    supervisor:start_link({local, ?MODULE}, ?MODULE, []). % 执行start_link 然后 init 然后子进程
 
 init(_) ->
+    % 新建ejabberd_listener表
     _ = ets:new(?MODULE, [named_table, public]),
+    % 添加reload回调函数
     ejabberd_hooks:add(config_reloaded, ?MODULE, config_reloaded, 50),
-    Listeners = ejabberd_option:listen(),
-    {ok, {{one_for_one, 10, 1}, listeners_childspec(Listeners)}}.
+    Listeners = ejabberd_option:listen(), % 从配置文件中读取返回监听的列表
+    {ok, {{one_for_one, 10, 1}, listeners_childspec(Listeners)}}. % 监听
 
 stop() ->
     ejabberd_hooks:delete(config_reloaded, ?MODULE, config_reloaded, 50),
@@ -81,6 +83,9 @@ listeners_childspec(Listeners) ->
     lists:map(
       fun({EndPoint, Module, Opts}) ->
 	      ets:insert(?MODULE, {EndPoint, Module, Opts}),
+	      % todo：这里的启动方式不是很理解
+	      % 开启了一系列的子进程，其实还是自己本身，表示在不同端口上启动ejabberd_listener进程
+		% 第二行是参数
 	      {EndPoint,
 	       {?MODULE, start, [EndPoint, Module, Opts]},
 	       transient, brutal_kill, worker, [?MODULE]}
@@ -96,7 +101,11 @@ start_listeners() ->
 
 -spec start(endpoint(), module(), opts()) -> term().
 start(EndPoint, Module, Opts) ->
+	% ?INFO_MSG("[Asklv] [ejabberd_lisntener:start] : ~p, ~p, ~p", [EndPoint, Module, Opts]),
+	% 每个模块都掉用start进行处理，c2，http等
     proc_lib:start_link(?MODULE, init, [EndPoint, Module, Opts]).
+
+% 监听不同的连接，主要看tcp
 
 -spec init(endpoint(), module(), opts()) -> ok.
 init({_, _, Transport} = EndPoint, Module, AllOpts) ->
@@ -147,14 +156,16 @@ init({Port, _, udp} = EndPoint, Module, Opts, SockOpts) ->
 	    proc_lib:init_ack(Err)
     end;
 init({Port, _, tcp} = EndPoint, Module, Opts, SockOpts) ->
-    case listen_tcp(Port, SockOpts) of
+    case listen_tcp(Port, SockOpts) of % 监听tcp端口
 	{ok, ListenSocket} ->
+		?INFO_MSG("[Asklv] [ejabberd_lisntener:tcp_init Port] : ~p", [Port]),
+		% 2023-01-19 15:37:47.753104+08:00 [info] [Asklv] [ejabberd_lisntener:tcp_init Port] : 7777
 	    case inet:sockname(ListenSocket) of
 		{ok, {Addr, Port1}} ->
 		    proc_lib:init_ack({ok, self()}),
 		    case application:ensure_started(ejabberd) of
 			ok ->
-			    Sup = start_module_sup(Module, Opts),
+			    Sup = start_module_sup(Module, Opts), % 启动一些子进程
 			    Interval = maps:get(accept_interval, Opts),
 			    Proxy = maps:get(use_proxy_protocol, Opts),
 			    ?INFO_MSG("Start accepting ~ts connections at ~ts for ~p",
@@ -165,6 +176,7 @@ init({Port, _, tcp} = EndPoint, Module, Opts, SockOpts) ->
 				false ->
 				    accept(ListenSocket, Module, Opts1, Sup, Interval, Proxy);
 				true ->
+					% 开始监听
 				    State = Module:tcp_init(ListenSocket, Opts1),
 				    accept(ListenSocket, Module, State, Sup, Interval, Proxy)
 			    end;
@@ -233,6 +245,8 @@ accept(ListenSocket, Module, State, Sup, Interval, Proxy) ->
 -spec accept(inet:socket(), module(), state(), atom(),
 	     non_neg_integer(), boolean(), 2|3) -> no_return().
 accept(ListenSocket, Module, State, Sup, Interval, Proxy, Arity) ->
+	% ?INFO_MSG("~p 's start function", [Module]),
+	% 这里显示的是调用 ejabberd_c2s 模块的start
     NewInterval = apply_rate_limit(Interval),
     case gen_tcp:accept(ListenSocket) of
 	{ok, Socket} when Proxy ->
@@ -278,6 +292,7 @@ accept(ListenSocket, Module, State, Sup, Interval, Proxy, Arity) ->
 		_ ->
 		    gen_tcp:close(Socket)
 	    end,
+		% 继续循环     
 	    accept(ListenSocket, Module, State, Sup, NewInterval, Proxy, Arity);
 	{error, Reason} ->
 	    ?ERROR_MSG("(~w) Failed TCP accept: ~ts",
@@ -307,6 +322,9 @@ udp_recv(Socket, Module, State) ->
 -spec start_connection(module(), 2|3, inet:socket(), state(), atom()) ->
 		      {ok, pid()} | {error, any()} | ignore.
 start_connection(Module, Arity, Socket, State, Sup) ->
+	?INFO_MSG("[Asklv] [ejabberd_lisntener:start_connection] : ~p", [Module]),
+	% 2023-01-19 16:10:17.943359+08:00 [info] [Asklv] [ejabberd_lisntener:start_connection] : ejabberd_c2s
+    	% 建立连接的时候使用的c2s的start
     Res = case Sup of
 	      undefined when Arity == 3 ->
 		  Module:start(gen_tcp, Socket, State);
@@ -315,8 +333,16 @@ start_connection(Module, Arity, Socket, State, Sup) ->
 	      _ when Arity == 3 ->
 		  supervisor:start_child(Sup, [gen_tcp, Socket, State]);
 	      _ ->
-		  supervisor:start_child(Sup, [{gen_tcp, Socket}, State])
+		  supervisor:start_child(Sup, [{gen_tcp, Socket}, State]) % 进了这里
 	  end,
+	?INFO_MSG("[Asklv] [ejabberd_lisntener:start_connection -> Sup] : ~p", [Sup]), % 是id的属性：ejabberd_c2s_sup
+	% 2023-01-19 16:24:40.321580+08:00 [info] [Asklv] [ejabberd_lisntener:start_connection -> Sup] : ejabberd_c2s_sup
+	?INFO_MSG("[Asklv] [ejabberd_lisntener:start_connection -> State] : ~p", [State]),
+	% 2023-01-19 16:24:40.321645+08:00 [info] [Asklv] [ejabberd_lisntener:start_connection -> State] : [{shaper,c2s_shaper}, {max_stanza_size, 262144}, {access,c2s}]
+	?INFO_MSG("[Asklv] [ejabberd_lisntener:start_connection -> res] : ~p", [Res]),
+	% 这里返回的是Pid，即绑定的处理 
+
+	% 目前的调试是进入整流，即进入了shaper
     case Res of
 	{ok, Pid, preowned_socket} ->
 	    Module:accept(Pid),
@@ -364,6 +390,17 @@ start_module_sup(Module, Opts) ->
     case maps:get(supervisor, Opts) of
 	true ->
 	    Proc = list_to_atom(atom_to_list(Module) ++ "_sup"),
+	% 启动xxx_sup模块
+	% 2023-01-19 15:43:35.583616+08:00 [info] [Asklv] [ejabberd_lisntener:start_module_sup] : ejabberd_c2s_sup
+	% 2023-01-19 15:43:35.583612+08:00 [info] [Asklv] [ejabberd_lisntener:start_module_sup] : mod_mqtt_sup
+	% 2023-01-19 15:43:35.583643+08:00 [info] [Asklv] [ejabberd_lisntener:start_module_sup] : mod_proxy65_stream_sup
+	% 2023-01-19 15:43:35.583772+08:00 [info] [Asklv] [ejabberd_lisntener:start_module_sup] : ejabberd_http_sup
+	% 2023-01-19 15:43:35.583830+08:00 [info] [Asklv] [ejabberd_lisntener:start_module_sup] : ejabberd_http_sup
+	% 2023-01-19 15:43:35.583845+08:00 [info] [Asklv] [ejabberd_lisntener:start_module_sup] : ejabberd_s2s_in_sup
+	% 2023-01-19 15:43:35.583851+08:00 [info] [Asklv] [ejabberd_lisntener:start_module_sup] : ejabberd_c2s_sup
+
+	% 等到子进程完全启动之后才会返回父进程
+	    ?INFO_MSG("[Asklv] [ejabberd_lisntener:start_module_sup] : ~p", [Proc]),
 	    ChildSpec =	{Proc, {ejabberd_tmp_sup, start_link, [Proc, Module]},
 			 permanent,
 			 infinity,

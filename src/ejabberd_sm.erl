@@ -150,6 +150,7 @@ route(Packet) ->
 -spec open_session(sid(), binary(), binary(), binary(), prio(), info()) -> ok.
 
 open_session(SID, User, Server, Resource, Priority, Info) ->
+	% 核心是使用set_session完成session数据的存入
     set_session(SID, User, Server, Resource, Priority, Info),
     check_for_sessions_to_replace(User, Server, Resource),
     JID = jid:make(User, Server, Resource),
@@ -171,6 +172,7 @@ close_session(SID, User, Server, Resource) ->
     Sessions = get_sessions(Mod, LUser, LServer, LResource),
     Info = case lists:keyfind(SID, #session.sid, Sessions) of
 	       #session{info = I} = Session ->
+    		% 删除掉关闭的session记录
 		   delete_session(Mod, Session),
 		   I;
 	       _ ->
@@ -477,8 +479,8 @@ init([]) ->
 	      (_, Err) -> Err
 	   end, ok, get_sm_backends()) of
 	ok ->
-	    clean_cache(),
-	    gen_iq_handler:start(?MODULE),
+	    clean_cache(), % 清空节点的缓存  
+	    gen_iq_handler:start(?MODULE), %
 	    ejabberd_hooks:add(host_up, ?MODULE, host_up, 50),
 	    ejabberd_hooks:add(host_down, ?MODULE, host_down, 60),
 	    ejabberd_hooks:add(config_reloaded, ?MODULE, config_reloaded, 50),
@@ -569,6 +571,9 @@ set_session(SID, User, Server, Resource, Priority, Info) ->
 -spec set_session(#session{}) -> ok | {error, any()}.
 set_session(#session{us = {LUser, LServer}} = Session) ->
     Mod = get_sm_backend(LServer),
+    ?INFO_MSG("[Asklv] [ejabberd_sm:set_session -> get_sm_backend] : -> ~p", [Mod]),
+%     2023-01-19 14:47:11.575197+08:00 [info] get_sm_backend : -> ejabberd_sm_mnesia
+% 	目前的会话管理是mnesia
     case Mod:set_session(Session) of
 	ok ->
 	    case use_cache(Mod, LServer) of
@@ -901,6 +906,8 @@ force_update_presence({LUser, LServer}) ->
 
 get_sm_backend(Host) ->
     DBType = ejabberd_option:sm_db_type(Host),
+    % 这里初始化后端
+    % sql/redis/mnesia
     list_to_existing_atom("ejabberd_sm_" ++ atom_to_list(DBType)).
 
 -spec get_sm_backends() -> [module()].
