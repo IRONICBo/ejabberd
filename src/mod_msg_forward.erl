@@ -48,8 +48,9 @@ start(_Host, _Opts) ->
         ejabberd_hooks:add(msg_forward, ?MODULE, msg_forward, 50),
         ?INFO_MSG("Mod msg_forward Start...", []),
 
-        AWS_ACCESS_KEY_ID = gen_mod:get_module_opt(_Host, mod_msg_forward, aws_access_key_id),
-        AWS_SECRET_ACCESS_KEY = gen_mod:get_module_opt(_Host, mod_msg_forward, aws_secret_access_key),
+        % 需要转换为字符串
+        AWS_ACCESS_KEY_ID = atom_to_list(gen_mod:get_module_opt(_Host, mod_msg_forward, aws_access_key_id)),
+        AWS_SECRET_ACCESS_KEY = atom_to_list(gen_mod:get_module_opt(_Host, mod_msg_forward, aws_secret_access_key)),
 
         application:set_env(erlcloud, aws_access_key_id, AWS_ACCESS_KEY_ID),
         application:set_env(erlcloud, aws_secret_access_key, AWS_SECRET_ACCESS_KEY),
