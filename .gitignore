@@ -45,3 +45,6 @@ Mnesia.nonode@nohost/
 /ejabberd-*.run
 /ejabberd-*.tar.gz
 cert/-out
+
+/__build
+/rebar3.crashdump

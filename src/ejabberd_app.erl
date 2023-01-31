@@ -84,6 +84,7 @@ start(_, _) ->
 start_included_apps() ->
     % get_key(application, key)
     {ok, Apps} = application:get_key(ejabberd, included_applications),
+	?INFO_MSG("Application ~p", [Apps]),
     lists:foreach(
 	fun(mnesia) ->
 	       ok;
